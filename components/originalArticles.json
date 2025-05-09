@@ -1,0 +1,93 @@
+[
+    {
+      "id": "a1",
+      "title": "How to Stay Productive Working Remotely",
+      "summary": "Tips and tricks for maintaining productivity while working from home.",
+      "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a2",
+      "title": "The Future of AI in Everyday Life",
+      "summary": "Exploring how artificial intelligence is shaping our daily routines.",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a3",
+      "title": "Mastering Time Management Techniques",
+      "summary": "Proven methods to manage your time effectively and boost productivity.",
+      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a4",
+      "title": "The Rise of Remote Work Culture",
+      "summary": "How companies are adapting to fully remote or hybrid working models.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a5",
+      "title": "Healthy Habits for a Digital Lifestyle",
+      "summary": "How to maintain physical and mental health in a tech-heavy world.",
+      "image": "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a6",
+      "title": "Top Programming Languages to Learn in 2025",
+      "summary": "A comprehensive guide to the most in-demand coding languages.",
+      "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981d?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a7",
+      "title": "A Beginner's Guide to Investing",
+      "summary": "Everything you need to know before diving into the stock market.",
+      "image": "https://images.unsplash.com/photo-1521540216272-a50305cd4421?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a8",
+      "title": "Cybersecurity Essentials for Everyone",
+      "summary": "Protecting your digital identity in an age of increasing threats.",
+      "image": "https://images.unsplash.com/photo-1584433144859-1fc2f49d7083?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a9",
+      "title": "Mindfulness and Meditation for Focus",
+      "summary": "Using meditation to sharpen concentration and reduce stress.",
+      "image": "https://images.unsplash.com/photo-1504198458649-3128b932f49b?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a10",
+      "title": "How Blockchain is Changing Finance",
+      "summary": "The impact of decentralized technology on global banking systems.",
+      "image": "https://images.unsplash.com/photo-1518544807564-9c8a0cc6f70d?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a11",
+      "title": "Building Your Personal Brand Online",
+      "summary": "Steps to establish a credible and recognizable presence on the web.",
+      "image": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a12",
+      "title": "Exploring the Metaverse: What’s Next?",
+      "summary": "Understanding the future of virtual interaction and digital assets.",
+      "image": "https://images.unsplash.com/photo-1631182161325-98b3d7b4e1d0?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a13",
+      "title": "Sustainable Living in a Modern World",
+      "summary": "Practical tips to reduce your ecological footprint.",
+      "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a14",
+      "title": "The Psychology Behind Habits",
+      "summary": "How our brains form habits and how to reprogram them.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": "a15",
+      "title": "Getting Started with Freelancing",
+      "summary": "A roadmap for turning your skills into a freelance career.",
+      "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
+    }
+  ]
+  
