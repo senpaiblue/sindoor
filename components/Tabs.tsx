@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import xPlatformNews from "./xPlatformNews.json";
 import originalArticles from "./originalArticles.json"; 
@@ -91,7 +90,9 @@ const AnimatedTabs = ({
             style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.15)' }}
           >
             <img src="/ai.svg" alt="AI" className="w-5 h-5" />
-           <p className="text-white text-lg font-bold">Ask AI</p>
+            <p className="text-white text-lg font-bold">
+              {currentTab?.id === 'x-news' ? 'X Summary' : 'Traditional Media Summary'}
+            </p>
           </button>
         )}
         {/* Feed or Summary */}
