@@ -222,7 +222,27 @@ const AnimatedTabs = ({
                 ) : xSummaryError ? (
                   <span className="text-red-500">{xSummaryError}</span>
                 ) : (
-                  <span>{xSummary}</span>
+                  <span>
+                    {(() => {
+                      // Try to parse bullet points in the summary
+                      const bulletRegex = /\* \*\*(.+?):\*\* ([^*]+)(?=(\* \*\*|$))/g;
+                      const matches = [...(xSummary.matchAll(bulletRegex))];
+                      if (matches.length > 0) {
+                        return (
+                          <ul className="text-left w-full">
+                            {matches.map((m, i) => (
+                              <li key={i} className="mb-2">
+                                <span className="font-bold">• {m[1]}</span>
+                                <div className="ml-4 text-sm text-gray-700">{m[2]}</div>
+                              </li>
+                            ))}
+                          </ul>
+                        );
+                      } else {
+                        return xSummary;
+                      }
+                    })()}
+                  </span>
                 )
               ) : (
                 summaryData
