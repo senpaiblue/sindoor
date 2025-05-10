@@ -147,7 +147,7 @@ const AnimatedTabs = ({
         {/* Floating AI button */}
         {!showSummary && (
           <button
-            className="px-4  fixed md:bottom-8 bottom-16 z-50 py-2 gap-4 mb-4 flex flex-row items-center justify-center bg-black text-white rounded-lg shadow-lg hover:bg-gray-800 transition-all "
+            className={cn("px-4  fixed md:bottom-8 bottom-16 z-50 py-2 gap-4 mb-4 flex flex-row items-center justify-center bg-black text-white rounded-lg shadow-lg hover:bg-gray-800 transition-all", activeTab === 'x-news' ? "flex" : "hidden")}
             onClick={() => setShowSummary(true)}
             aria-label="Show AI summary"
             style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.15)' }}
@@ -173,7 +173,7 @@ const AnimatedTabs = ({
                       activeTab === 'x-news'
                         ? item.profile_image_url || "/x.avif"
                         : "/news1.svg"
-                    } alt={item.authorName || item.title} className="w-full md:w-24 md:h-full h-24 object-cover rounded-md" />
+                      } alt={item.authorName || item.title} className={cn("w-full md:w-24 md:h-full h-24 object-cover rounded-md", activeTab === 'x-news' ? "flex" : "hidden")} />
                     <div className="flex flex-col justify-center w-full">
                       <span className="text-gray-700 flex flex-row items-center justify-between text-sm">
                         <h3 className="text-lg font-semibold w-[80%] mb-1"> {activeTab === 'x-news' ? item.displayName : item.title}</h3>
@@ -182,7 +182,7 @@ const AnimatedTabs = ({
                       <p className="text-gray-700 text-sm">{
                         activeTab === 'x-news'
                           ? (item.text && item.text.length > 50 ? item.text.slice(0, 250) + '...' : item.text)
-                          : (item.summary && item.summary.length > 50 ? item.summary.slice(0, 250) + '...' : item.summary)
+                          : (item.summary && item.summary.length > 50 ? item.summary.slice(0, 900) + '...' : item.summary)
                       }</p>
                       {activeTab === 'traditional-media' && item.url && (
                         <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline text-xs mt-1">Read more</a>
