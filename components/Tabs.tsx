@@ -138,6 +138,28 @@ const AnimatedTabs = ({
     fetchXNews();
   }, []);
 
+  // Add back the X summary effect
+  React.useEffect(() => {
+    if (showSummary && activeTab === 'x-news') {
+      setXSummaryLoading(true);
+      setXSummaryError("");
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/news/twitter/summary?hour=${summaryRange}`)
+        .then(res => {
+          setXSummary(
+            typeof res.data === 'string'
+              ? res.data
+              : res.data?.parts?.[0]?.text || ""
+          );
+        })
+        .catch(() => {
+          setXSummaryError("Failed to load summary.");
+        })
+        .finally(() => {
+          setXSummaryLoading(false);
+        });
+    }
+  }, [showSummary, activeTab, summaryRange]);
+
   React.useEffect(() => {
     if (activeTab === 'traditional-media') {
       setTraditionalLoading(true);
